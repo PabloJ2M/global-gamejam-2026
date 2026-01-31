@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - GamePoint
+  - Item
   layers:
   - Default
   - TransparentFX

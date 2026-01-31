@@ -1,0 +1,8 @@
+namespace UnityEngine.Animations
+{
+    public class TweenRectPositionSwipe : TweenRectPosition
+    {
+        [ContextMenu("SwipeIn")] public void SwipeIn() => _tweenCore?.Play(true);
+        [ContextMenu("SwipeOut")] public void SwipeOut() => _tweenCore?.Play(false);
+    }
+}

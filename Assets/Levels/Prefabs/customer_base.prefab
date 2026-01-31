@@ -170,7 +170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: -876546973899608171, guid: c0ffafbe00db9f141810beb3d20e9b3d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -283,6 +283,7 @@ MonoBehaviour:
   - rid: 5545953850446578082
   - rid: 5545953850446578483
   - rid: 5545953850446578484
+  - rid: 5545953855959204110
   m_OriginalGraph: {fileID: -2349756946547453131, guid: 7dc86e9d2b67cf247bf69dea87f4a4ea, type: 2}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -329,6 +330,14 @@ MonoBehaviour:
           m_Value1: 11532914501349724152
         Name: Run Speed
         m_Value: 3
+    - rid: 5545953855959204110
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 5310238431888000629
+          m_Value1: 12454561492727408499
+        Name: Stop Distance
+        m_Value: 0.2
 --- !u!114 &3033338095705183938
 MonoBehaviour:
   m_ObjectHideFlags: 0
