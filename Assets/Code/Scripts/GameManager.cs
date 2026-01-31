@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : SingletonBasic<GameManager>
 {
     public void CallPolice()
     {
