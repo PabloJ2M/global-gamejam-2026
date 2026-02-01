@@ -1,7 +1,7 @@
 using System;
+using System.Linq;
 using Unity.Properties;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Unity.Behavior
 {
@@ -13,8 +13,15 @@ namespace Unity.Behavior
 
         protected override Status OnStart()
         {
-            var points = GameObject.FindGameObjectsWithTag("GamePoint");
-            Target.SetValueWithoutNotify(points[Random.Range(0, points.Length)].transform);
+            var points = GameObject.FindObjectsByType<GamePoint>(FindObjectsSortMode.None).ToList();
+            var point = points.Find(x => !x.IsOcupped);
+
+            if (point == null)
+                return Status.Failure;
+
+            Target.SetValueWithoutNotify(point.transform);
+            point.SetNPC();
+
             return Status.Success;
         }
     }
